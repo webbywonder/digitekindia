@@ -1,0 +1,20 @@
+{
+  "name": "digitekindia",
+  "version": "1.0.0",
+  "description": "Digitek India's Official Website",
+  "main": "index.js",
+  "scripts": {
+    "build": "sass assets/sass/main.scss:assets/css/main.css",
+    "watch": "sass --watch assets/sass/main.scss:assets/css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webgeeks-in/digitekindia.git"
+  },
+  "author": "Darshan Gada",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/webgeeks-in/digitekindia/issues"
+  },
+  "homepage": "https://github.com/webgeeks-in/digitekindia#readme"
+}
