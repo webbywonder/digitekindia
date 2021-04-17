@@ -1,6 +1,6 @@
-# digitekindia
-Digitek India - India's Leading Premium Digital Paper Supplier<br/>
-Official Website
+# Digitek India - Official Website
+India's Leading Premium Digital Paper Supplier<br/>
+
 
 ## Installation
 ```bash
