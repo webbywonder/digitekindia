@@ -20,6 +20,10 @@
   --thm-text-dark-rgb: 142, 150, 160;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: $thm-font;
   color: $thm-color;

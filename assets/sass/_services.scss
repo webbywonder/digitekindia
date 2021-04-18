@@ -342,11 +342,11 @@
     color: $thm-black;
     font-size: 30px;
     font-weight: bold;
-    margin-top: 20px;
+    // margin-top: 20px;
     margin-bottom: 15px;
     @include laptop {
       font-size: 40px;
-      margin-top: 30px;
+      // margin-top: 30px;
       margin-bottom: 35px;
     }
   }
@@ -429,18 +429,30 @@
     font-size: 22px;
     padding: 30px;
     line-height: 1.4;
-    margin-top: 20px;
+    // margin-top: 20px;
     margin-bottom: 20px;
     border-radius: $border-radius;
+    &.orange {
+      background-color: $thm-primary;
+    }
+    &.blue {
+      background-color: #036ead;
+    }
+    &.gray {
+      background-color: $thm-color;
+    }
+    &.red {
+      background-color: $thm-secondary;
+    }
     @include laptop {
-      font-size: 30px;
+      // font-size: 30px;
       font-weight: bold;
-      padding-left: 80px;
-      padding-right: 80px;
-      padding-top: 45px;
-      padding-bottom: 45px;
-      margin-top: 50px;
-      margin-bottom: 60px;
+      // padding-left: 80px;
+      // padding-right: 80px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      margin-top: 20px;
+      margin-bottom: 20px;
     }
   }
   &__list-2 {
@@ -488,8 +500,8 @@
       margin: 0;
       padding: 0;
       list-style: none;
-      padding-left: 20px;
-      padding-right: 20px;
+      padding-left: 0;
+      padding-right: 0;
       li {
         display: block;
         + li {
