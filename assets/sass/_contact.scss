@@ -12,7 +12,7 @@
   &__summery {
     margin-bottom: 30px;
     @include laptop {
-      margin-top: 40px;
+      margin-top: 10px;
     }
     p {
       margin: 0;
@@ -34,6 +34,7 @@
   &__social {
     display: flex;
     align-items: center;
+    padding-bottom: 30px;
     a {
       display: flex;
       align-items: center;
