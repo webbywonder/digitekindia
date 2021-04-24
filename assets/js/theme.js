@@ -30,7 +30,7 @@
         message: {
           required: true
         },
-        subject: {
+        phone: {
           required: true
         }
       },

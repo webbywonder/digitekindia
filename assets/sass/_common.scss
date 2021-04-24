@@ -85,6 +85,10 @@ p {
   font-size: $body-size;
 }
 
+.error {
+  color: $thm-secondary;
+}
+
 .page-wrapper {
   position: relative;
   margin: 0 auto;

@@ -1,8 +1,8 @@
 <?php
 
 // Define some constants
-define( "RECIPIENT_NAME", "John Doe" );
-define( "RECIPIENT_EMAIL", "mail@mail.com" );
+define( "RECIPIENT_NAME", "Digitek India" );
+define( "RECIPIENT_EMAIL", "info@digitekindia.in" );
 
 // Read the form values
 $success = false;
@@ -15,7 +15,7 @@ $address = isset( $_POST['address'] ) ? preg_replace( "/[^\.\-\_\@a-zA-Z0-9]/", 
 $website = isset( $_POST['website'] ) ? preg_replace( "/[^\.\-\_\@a-zA-Z0-9]/", "", $_POST['website'] ) : "";
 $message = isset( $_POST['message'] ) ? preg_replace( "/(From:|To:|BCC:|CC:|Subject:|Content-Type:)/", "", $_POST['message'] ) : "";
 
-$mail_subject = 'A contact request send by ' . $name;
+$mail_subject = 'A contact request send by ' . $name . '| Digitek Website';
 
 $body = 'Name: '. $name . "\r\n";
 $body .= 'Email: '. $senderEmail . "\r\n";
@@ -28,8 +28,6 @@ if ($address) {$body .= 'Address: '. $address . "\r\n"; }
 if ($website) {$body .= 'Website: '. $website . "\r\n"; }
 
 $body .= 'message: ' . "\r\n" . $message;
-
-
 
 // If all values exist, send the email
 if ( $name && $senderEmail && $message ) {
