@@ -34,12 +34,11 @@
     }
     > img {
       width: 100%;
-      filter: blur(0);
       border-radius: $border-radius;
       transition: 500ms ease;
     }
     &:hover > img {
-      filter: blur(2px);
+      width: 101%;
     }
     &-content {
       width: calc(100% - 40px);
@@ -218,7 +217,7 @@
         font-size: 20px;
       }
       @include laptop {
-        max-width: 145px;
+        // max-width: 145px;
         margin-left: auto;
         margin-right: auto;
       }
@@ -312,16 +311,13 @@
     text-align: left;
     margin-bottom: 30px;
     @include laptop {
-      padding-left: 40px;
-      padding-right: 40px;
-      padding-bottom: 35px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 20px;
     }
     h3 {
       margin-left: 0;
       margin-right: 0;
-      @include laptop {
-        margin-top: 25px;
-      }
     }
   }
 }
