@@ -4,8 +4,9 @@
   "description": "Digitek India's Official Website",
   "main": "index.js",
   "scripts": {
-    "build": "sass /assets/sass/main.scss:/assets/css/main.css",
-    "watch": "sass --watch /assets/sass/main.scss:/assets/css/main.css"
+    "build": "sass assets/sass/main.scss:assets/css/main.css",
+    "watch": "sass --watch assets/sass/main.scss:assets/css/main.css",
+    "prod": "sass assets/sass/main.scss:assets/css/main.css --style compressed --no-source-map"
   },
   "repository": {
     "type": "git",
