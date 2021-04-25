@@ -3,7 +3,6 @@ Options -MultiViews
 
 
 <IfModule mod_rewrite.c>
-
     # (1)
     RewriteEngine On
 
@@ -28,4 +27,37 @@ Options -MultiViews
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteRule ^([^\.]+)$ $1.html [NC,L]
+</IfModule>
+
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php74” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php74 .php .php7 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit
+
+# Old Site Redirects
+# Redirect 301 /index.html https://digitekindia.in/
+# Redirect 301 /about-us.html https://digitekindia.in/about
+# Redirect 301 /about.html https://digitekindia.in/about
+# Redirect 301 /contact.html https://digitekindia.in/contact
+#Redirect 301 /plusmatt.html https://digitekindia.in/products/art-paper-art-card
+#Redirect 301 /art-paper-art-card.html https://digitekindia.in/products/art-paper-art-card
+#Redirect 301 /mirrorcoat.html https://digitekindia.in/products/mirrorcoat
+#Redirect 301 /ivory-cards.html https://digitekindia.in/products/ivory-cards
+#Redirect 301 /alabaster.html https://digitekindia.in/products/alabaster
+#Redirect 301 /gummingsheets.html https://digitekindia.in/products/gummingsheets
+#Redirect 301 /service.html https://digitekindia.in/products/
+#Redirect 301 /products.html https://digitekindia.in/products/
+#Redirect 301 /colorlok-technology.html https://digitekindia.in/products/alabaster
+#Redirect 301 /offset-alabaster-readmore.html https://digitekindia.in/products/alabaster
+
+# SSL
+<IfModule mod_rewrite.c>
+    RewriteCond %{REQUEST_URI} /+[^\.]+$
+    RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+    RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+    RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+    RewriteRule ^(.+[^/])$ %{REQUEST_URI}/ [R=301,L]
 </IfModule>
