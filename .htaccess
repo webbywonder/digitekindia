@@ -46,10 +46,9 @@ ServerSignature Off
 # php -- END cPanel-generated handler, do not edit
 
 # Old Site Redirects
-# Redirect 301 /index.html https://digitekindia.in/
-# Redirect 301 /about-us.html https://digitekindia.in/about
-# Redirect 301 /about.html https://digitekindia.in/about
-# Redirect 301 /contact.html https://digitekindia.in/contact
+#Redirect 301 /index.html https://digitekindia.in/
+#Redirect 301 /about-us.html https://digitekindia.in/about
+#Redirect 301 /contact-us.html https://digitekindia.in/contact
 #Redirect 301 /plusmatt.html https://digitekindia.in/products/art-paper-art-card
 #Redirect 301 /art-paper-art-card.html https://digitekindia.in/products/art-paper-art-card
 #Redirect 301 /mirrorcoat.html https://digitekindia.in/products/mirrorcoat
