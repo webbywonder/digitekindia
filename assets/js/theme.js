@@ -346,5 +346,6 @@
     position: 'right',
     zIndex: 10,
     buttonImage: '<img src="/assets/images/loader.png" style="width:75%; height:75%"  />'
-});
+  });
+
 })(jQuery);
