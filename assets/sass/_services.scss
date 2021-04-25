@@ -488,6 +488,21 @@
       }
     }
   }
+  .thm-btn {
+    background-color: $thm-primary;
+    i {
+      font-size: 32px;
+      color: #fff;
+      margin-right: 10px;
+    }
+    @include laptop {
+      font-size: 18px;
+    }
+    &:hover {
+      background-color: $thm-base;
+      color: #fff;
+    }
+  }
 }
 
 .service-sidebar {
