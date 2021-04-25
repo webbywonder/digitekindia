@@ -335,7 +335,7 @@
   });
 
   $('.digitek-chat').floatingWhatsApp({
-    phone: '+91 9029208698',
+    phone: '+91 9833658190',
     popupMessage: 'Hello, how can we help you?',
     showPopup: true,
     showOnIE: false,
