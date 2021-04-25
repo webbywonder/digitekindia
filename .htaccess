@@ -41,7 +41,7 @@ ServerSignature Off
 # php -- BEGIN cPanel-generated handler, do not edit
 # Set the “ea-php74” package as the default “PHP” programming language.
 <IfModule mime_module>
-  # AddHandler application/x-httpd-ea-php74 .php .php7 .phtml
+  AddHandler application/x-httpd-ea-php74 .php .php7 .phtml
 </IfModule>
 # php -- END cPanel-generated handler, do not edit
 
@@ -60,6 +60,7 @@ ServerSignature Off
 #Redirect 301 /products.html https://digitekindia.in/products/
 #Redirect 301 /colorlok-technology.html https://digitekindia.in/products/alabaster
 #Redirect 301 /offset-alabaster-readmore.html https://digitekindia.in/products/alabaster
+#Redirect 301 /404-error.html https://digitekindia.in/404
 
 # Forcing Https
 <IfModule mod_rewrite.c>
