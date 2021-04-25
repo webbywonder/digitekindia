@@ -340,7 +340,7 @@
     showPopup: true,
     showOnIE: false,
     headerTitle: 'Welcome to Digitek™',
-    autoOpenTimeout: 5000,
+    autoOpenTimeout: 60000,
     headerColor: '#aace48',
     backgroundColor: '#aace48',
     position: 'right',
