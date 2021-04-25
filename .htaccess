@@ -205,7 +205,7 @@ AddDefaultCharset utf-8
 # Security Policy
 <IfModule mod_headers.c>
     Header set X-Frame-Options "DENY"
-    Header set Content-Security-Policy "script-src 'self'; object-src 'self'"
+    #Header set Content-Security-Policy "script-src 'self'; object-src 'self'"
     Header set X-Content-Type-Options "nosniff"
     Header set X-XSS-Protection "1; mode=block"
     Header set Referrer-Policy "no-referrer-when-downgrade"
