@@ -40,10 +40,14 @@
           $(form).attr("action"),
           $(form).serialize(),
           function (response) {
-            $(form).parent().find(".result").append(response);
-            $(form).find('input[type="text"]').val("");
-            $(form).find('input[type="email"]').val("");
-            $(form).find("textarea").val("");
+            let resultDiv = $(form).parent().find(".result");
+            resultDiv.html(response).show();
+            if (!response.includes('error')) {
+              $(form).find('input[type="text"]').val("");
+              $(form).find('input[type="number"]').val("");
+              $(form).find('input[type="email"]').val("");
+              $(form).find("textarea").val("");
+            }
           }
         );
         return false;
