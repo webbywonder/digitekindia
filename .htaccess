@@ -1,6 +1,3 @@
-
-text/x-generic .htaccess ( UTF-8 Unicode text, with very long lines )
-
 # Disable the pattern matching based on filenames.
 Options -MultiViews
 
