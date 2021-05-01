@@ -46,7 +46,7 @@ ServerSignature Off
 
 # Old Site Redirects
 Redirect 301 /about-us.html https://digitekindia.in/about
-Redirect 301 /contact.html https://digitekindia.in/contact
+# Redirect 301 /contact.html https://digitekindia.in/contact
 Redirect 301 /contact-us.html https://digitekindia.in/contact
 Redirect 301 /plusmatt.html https://digitekindia.in/products/art-paper-art-card
 Redirect 301 /art-paper-art-card.html https://digitekindia.in/products/art-paper-art-card
