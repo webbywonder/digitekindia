@@ -338,18 +338,4 @@
     }
   });
 
-  $('.digitek-chat').floatingWhatsApp({
-    phone: '+91 8828321159',
-    popupMessage: 'Hello, how can we help you?',
-    showPopup: true,
-    showOnIE: false,
-    headerTitle: 'Welcome to Digitek®',
-    autoOpenTimeout: 60000,
-    headerColor: '#aace48',
-    backgroundColor: '#aace48',
-    position: 'right',
-    zIndex: 10,
-    buttonImage: '<img src="/assets/images/loader.png" style="width:75%; height:75%"  />'
-  });
-
 })(jQuery);
